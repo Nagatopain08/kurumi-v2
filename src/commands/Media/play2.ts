@@ -9,12 +9,12 @@ import YT from '../../lib/YT'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'play',
-            description: '🎵 play a song with just search term!',
+            command: 'play2',
+            description: '📹 play a video with just search term!',
             category: 'media',
-            aliases: ['music'],
-            usage: `${client.config.prefix}play [term]`,
-            baseXp: 30
+            aliases: ['video'],
+            usage: `${client.config.prefix}play2 [term]`,
+            baseXp: 20
         })
     }
 
@@ -23,19 +23,15 @@ export default class Command extends BaseCommand {
         const term = joined.trim()
         const { videos } = await yts(term)
         if (!videos || videos.length <= 0) return void M.reply(`⚓ No Matching videos found for the term : *${term}*`)
-        const audio = new YT(videos[0].url, 'audio')
-        if (!audio.url) return
+        const video = new YT(videos[0].url, 'video')
+        if (!video.url) return
         M.reply('⚡ Sending...')
         this.client
-            .sendMessage(M.from, await audio.getBuffer(), MessageType.audio, {
+            .sendMessage(M.from, await video.getBuffer(), MessageType.video, {
                 quoted: M.WAMessage,
                 contextInfo: {
                     externalAdReply: {
-                        title: videos[0].title.substr(0, 30),
-                        body: `⚡ Yotsuba ⚡`,
-                        mediaType: 2,
-                        thumbnailUrl: `https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`,
-                        mediaUrl: audio.url
+                        mediaUrl: video.url
                     }
                 }
             })
