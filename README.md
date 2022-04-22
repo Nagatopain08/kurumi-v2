@@ -4,7 +4,7 @@
 
 
 
-# **🅺🆄🆁🆄🅼🅸 🆃🅾🅺🅸🆂🅰🅺🅸: A WhatsApp BOT WITH RICH CREATION FEATURES**
+# **♨️GOJO SATORU: A WhatsApp BOT WITH RICH CREATION FEATURES**
 
 
 > A Fully Modular and Whatsapp Efficient Bot <br>
@@ -49,7 +49,7 @@ Button : If you are deploying and using Railway
 
 -   Section Moved to
 
-    [Lumine-Guides](https://github.com/Eximinati/tokisaki-kurumi/blob/main/README.md)
+    [Lumine-Guides](https://github.com/Nagatopain07/Gojo saturo/blob/main/README.md)
 
 
 
@@ -102,7 +102,7 @@ This is a lovely project by Eximinati. After forking give it a star. 🌟 star i
 HOW TO REACH THE OWNER? 👇👇👇
 
    https://wa.me/263716564623?text=Hi%20I%20Am%20From%20GitHub%20
-   <a href="https://wa.me/923087880256?text=Hey_Fam%20I%20Am%20From%20GitHub%20☺️">
+   <a href="https://wa.me/916301185837?text=Hey_Fam%20I%20Am%20From%20GitHub%20☺️">
    <img scr="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
    </a>&nbsp;&nbsp;  
    <a
